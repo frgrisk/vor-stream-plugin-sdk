@@ -1,0 +1,10 @@
+// Copyright 2020-2025 The Financial Risk Group, Inc.
+
+syntax = "proto3";
+package frgrisk.vor_stream.plugin_sdk.midtier.v1;
+
+import "frgrisk/vor_stream/plugin_sdk/midtier/v1/run_id.proto";
+
+message RunServiceDeleteRequest {
+  RunID id = 1;
+}

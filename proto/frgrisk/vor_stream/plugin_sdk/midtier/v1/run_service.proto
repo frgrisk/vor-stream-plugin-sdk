@@ -1,0 +1,11 @@
+// Copyright 2020-2025 The Financial Risk Group, Inc.
+
+syntax = "proto3";
+package frgrisk.vor_stream.plugin_sdk.midtier.v1;
+
+import "frgrisk/vor_stream/plugin_sdk/midtier/v1/run_service_delete_request.proto";
+import "frgrisk/vor_stream/plugin_sdk/midtier/v1/run_service_delete_response.proto";
+
+service RunService {
+  rpc Delete(RunServiceDeleteRequest) returns (RunServiceDeleteResponse);
+}

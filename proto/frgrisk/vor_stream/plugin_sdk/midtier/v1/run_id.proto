@@ -1,0 +1,8 @@
+// Copyright 2020-2025 The Financial Risk Group, Inc.
+
+syntax = "proto3";
+package frgrisk.vor_stream.plugin_sdk.midtier.v1;
+
+message RunID {
+    string value = 1;
+}
