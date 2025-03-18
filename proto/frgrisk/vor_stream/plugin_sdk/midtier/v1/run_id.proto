@@ -4,5 +4,5 @@ syntax = "proto3";
 package frgrisk.vor_stream.plugin_sdk.midtier.v1;
 
 message RunID {
-    string value = 1;
+  string value = 1;
 }
