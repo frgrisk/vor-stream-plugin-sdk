@@ -1,0 +1,20 @@
+# Copyright 2020-2025 The Financial Risk Group, Inc.
+
+version: 2
+updates:
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      all-go-deps:
+        patterns:
+          - "*" # Matches all dependencies
+        update-types:
+          - "minor"
+          - "patch"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      # Check for updates to GitHub Actions every month
+      interval: "monthly"
